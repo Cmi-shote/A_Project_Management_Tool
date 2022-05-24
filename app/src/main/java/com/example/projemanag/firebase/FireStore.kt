@@ -241,7 +241,6 @@ class FireStore {
             .addOnFailureListener { e->
                 Log.e(activity.javaClass.simpleName,
                     "Error while getting user details", e)
-
             }
     }
 

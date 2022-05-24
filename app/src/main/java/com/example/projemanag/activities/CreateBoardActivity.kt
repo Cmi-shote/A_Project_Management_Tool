@@ -109,6 +109,7 @@ class CreateBoardActivity : BaseActivity() {
         if(actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true)
             actionBar.setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_white_ios_24)
+            actionBar.title = "Add New Board"
         }
 
         binding?.toolbarCreateBoardActivity?.setNavigationOnClickListener { onBackPressed() }

@@ -83,8 +83,7 @@ open class CardListItemAdapter(private val context: Context,
                                         onClickListener!!.onClick(position)
                                     }
                                 }
-                            }
-                        )
+                            })
                     }
                 }else{
                     holder.rvCardSelectedMembersList.visibility = View.GONE

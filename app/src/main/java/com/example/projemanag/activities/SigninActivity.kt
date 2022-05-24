@@ -63,12 +63,10 @@ class SigninActivity : BaseActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         FireStore().loadUserData(this@SigninActivity)
-                        Toast.makeText(this@SigninActivity,  "successful",
-                            Toast.LENGTH_LONG).show()
                     } else {
                         Toast.makeText(this@SigninActivity,  task.exception!!.message,
                             Toast.LENGTH_LONG).show()
-
+                        hideProgressDialog()
                     }
 
         }

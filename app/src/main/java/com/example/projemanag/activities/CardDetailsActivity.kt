@@ -282,9 +282,6 @@ class CardDetailsActivity : BaseActivity() {
         listDialog.show()
     }
 
-
-
-
     private fun setupSelectedMembersList(){
         val cardAssignedMemberList =
             mBoardDetails.taskList[mTaskListPosition].cards[mCardPosition].assignedTo

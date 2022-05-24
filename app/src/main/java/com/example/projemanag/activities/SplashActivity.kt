@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
 
         //move to intro screen after 2s
         Handler().postDelayed({
-            var currentUserID = FireStore().getCurrentUserID()
+            val currentUserID = FireStore().getCurrentUserID()
             if(currentUserID.isNotEmpty()){
                 startActivity(Intent(this, MainActivity::class.java))
             }else{
